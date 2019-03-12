@@ -1,0 +1,41 @@
+#add {
+	padding: 5px;
+	width: 100vw;
+	font-size: 20px;
+}
+
+#list {
+	padding: 20px;
+	border: dashed 1px gray;
+	margin: 10px 0 0;
+	background-color: beige;
+
+	li {
+		background-color: beige - 30;
+		padding: 10px;
+		margin: 10px 0 0;
+		text-transform: uppercase;
+		font-family: monospace;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		span {
+			pointer-events: none;
+		}
+
+		&.alt-color {
+			background-color: navy;
+			color: white;
+		}
+
+		button {
+			margin-right: 10px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
